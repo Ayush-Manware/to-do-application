@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do Application</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="mainContainer">
+      <h1 class="logo" id="$logo">Task <span class="listSpan">List</span></h1>
+      <!-- task List -->
+      <h3 class="addItems" id="$addItems" onclick="popupcard()">+ Add Items</h3>
+      <!-- Add Item -->
+      <h4 class="noItems" id="$noItems">No items in the list.</h4>
+      <!-- No Items -->
+
+      <!-- Create Card Container -->
+      <div class="createCard" id="$createCard">
+        <!-- add list popup -->
+        <div class="addNewItemBox" id="$addNewItemBox">
+          <h2>Add New List</h2>
+          <input type="text" id="input" class="input" value="" placeholder="Add Item"/>
+            <div class="popupButton">
+                <button class="addListButton" id="$addListButton" onclick="addCard()"> Add</button>
+                <button class="closeListButton"id="$closeListButton"onclick="closeListButton()">Close</button>
+            </div>
+        </div>
+
+      </div>
+
+
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

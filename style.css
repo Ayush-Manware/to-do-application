@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Lilita+One&family=Merriweather&family=Pacifico&family=Playfair+Display:wght@500&family=Roboto+Slab&family=Ysabeau+Infant&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    /* border: 1px solid white; */
+}
+
+html{
+    background-color: var(--containerColor);
+    color: var(--text);
+}
+
+:root{
+    --containerColor: rgb(19, 19, 19);
+    --text: rgb(234, 234, 234);
+}
+
+.mainContainer{
+    padding: 2vw 5vw;
+    border: 1px solid white;
+}
+
+.logo{
+    font-size: 40px;
+    padding: 10px 0px;
+    color: var(--text);
+}
+
+.listSpan{
+
+}
+
+.addItems{
+    text-align: right;
+    padding: 10px 0px;
+    font-size: 30px;
+}
+
+.noItems{
+    font-size: 25px;
+}
+
+.addCard{
+    width: 200vw;
+    text-align: center;
+    background-color: white;
+    border: 1px solid white;
+}
+
+.addNewItemBox{
+    border: 1px solid white;
+    position: fixed;
+    /* height: 10vw; */
+    top: 40%;
+    left: 35%;
+    width: 30vw;
+    margin-inline: auto;
+    text-align: center;
+    padding: 20px;
+    display:none;
+}
+
+.addNewItemBox h2{
+    font-size: 32px;
+}
+
+.input{
+    width: 22vw;
+    margin: 10px auto;
+    text-align: center;
+    padding: 8px 0px;
+}
+
+.popupButton{
+   
+}
+
+.addListButton{
+    padding: 5px;
+    width: 11vw;
+}
+
+.closeListButton{
+    width: 11vw;
+    padding: 5px;
+}
+
+.show{
+    display: block;
+}
+
+.hide{
+    display: none;
+}
+
+.createCard{
+    border: 1px solid white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* height: ; */
+}
+
+.card{
+    background-color: green;
+    height: 200px;
+    width: 150px;
+}
+
+.cardHeading{
+    color: red;
+}
