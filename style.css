@@ -1,113 +1,144 @@
-@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Lilita+One&family=Merriweather&family=Pacifico&family=Playfair+Display:wght@500&family=Roboto+Slab&family=Ysabeau+Infant&display=swap');
+.show{
+    display: block;
+  }
 
-*{
-    margin: 0px;
-    padding: 0px;
-    /* border: 1px solid white; */
-}
+  .hide{
+    display: none;
+  }
 
-html{
-    background-color: var(--containerColor);
-    color: var(--text);
-}
+  html{
+    background-color: rgb(42, 42, 42);
+    cursor: context-menu;
+  }
 
-:root{
-    --containerColor: rgb(19, 19, 19);
-    --text: rgb(234, 234, 234);
-}
+  .maincontainer {
+    /* border: 2px solid black; */
+    /* background: rgb(239, 239, 239); */
+    padding: 10px 40px;
+  }
 
-.mainContainer{
-    padding: 2vw 5vw;
-    border: 1px solid white;
-}
-
-.logo{
-    font-size: 40px;
-    padding: 10px 0px;
-    color: var(--text);
-}
-
-.listSpan{
-
-}
-
-.addItems{
-    text-align: right;
-    padding: 10px 0px;
-    font-size: 30px;
-}
-
-.noItems{
-    font-size: 25px;
-}
-
-.addCard{
-    width: 200vw;
-    text-align: center;
-    background-color: white;
-    border: 1px solid white;
-}
-
-.addNewItemBox{
-    border: 1px solid white;
+  .blurBackground{
+    width: 100%;
+    height: 100%;
+    /* background-color: rgb(133, 41, 41); */
+    backdrop-filter: blur(10px);
     position: fixed;
-    /* height: 10vw; */
-    top: 40%;
-    left: 35%;
-    width: 30vw;
-    margin-inline: auto;
-    text-align: center;
-    padding: 20px;
-    display:none;
-}
+    top: 0px; 
+    left: 0px;
+  }
 
-.addNewItemBox h2{
-    font-size: 32px;
+  .logo{
+    color: rgb(242, 228, 228);
+  }
+
+  .addItem{
+    color: rgb(242, 228, 228);
+  }
+
+  .para{
+    color: rgb(164, 66, 66);
+    text-align: center;
+  }
+
+  .popupDiv{
+    border: 1px solid black;
+    background: blue;
+    text-align: center; 
+    width: 30%;
+    position: fixed;
+    left: 35%;
+    top: 30%;
 }
 
 .input{
-    width: 22vw;
-    margin: 10px auto;
-    text-align: center;
-    padding: 8px 0px;
+  width: 90%;
 }
 
-.popupButton{
-   
+.popupDiv h4{
+    border: 1px solid black;
 }
 
-.addListButton{
-    padding: 5px;
-    width: 11vw;
+.addItem{
+    text-align: right;
 }
 
-.closeListButton{
-    width: 11vw;
-    padding: 5px;
-}
-
-.show{
-    display: block;
-}
-
-.hide{
-    display: none;
-}
-
-.createCard{
-    border: 1px solid white;
+  .cardContainer {
+    width: 100%;
+    /* height: 200px; */
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    /* height: ; */
-}
+    flex-wrap: wrap;
+    gap: 20px;
+  }
 
-.card{
-    background-color: green;
-    height: 200px;
-    width: 150px;
-}
+  .cardBody {
+    width: 25%;
+    /* border: 1px solid black; */
+    text-align: center;
+    background-color: aquamarine; 
+    backdrop-filter: blur(10px);
+  }
+  .cardTitle {
+    text-align: center;
+    background: white;
+    padding: 10px;
+    /* border: 1px solid black; */
+  }
 
-.cardHeading{
-    color: red;
-}
+  .cardInnerDiv{
+    height: 100px;
+  }
+
+  .cardDuttonDiv{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px auto;
+  }
+
+  .cardDeleteButton{
+    width: 45%;
+  }
+
+  .cardAddButton{
+    width: 45%;
+  }
+
+  .popup2container{
+    border: 1px solid rgb(246, 94, 0);
+    background: rgb(255, 255, 255);
+    text-align: center; 
+    width: 30%;
+    position: fixed;
+    left: 35%;
+    top: 30%;
+  }
+
+  .popup2Title{
+    text-align: center;
+    color: orange;
+  }
+
+  .popup2Input{
+    width: 90%;
+    border: 2px solid gray;
+    padding: 5px;
+  }
+
+  .popup2ButtonDiv{
+    display: flex;
+    margin: 10px  auto;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 1px solid gray; */
+  }
+
+  .popup2AddButton{
+    width: 45%;
+  }
+
+  .popup2DeleteButton{
+    width: 45%; 
+  }
