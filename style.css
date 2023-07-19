@@ -307,3 +307,14 @@ html {
   border: 1px solid white;
 }
 
+.addTaskListItem{
+  /* border: 1px solid red; */
+  font-size: 3vw;
+  padding: 0.5vw;
+  /* list-style-type: none; */
+  backdrop-filter: blur(1px);
+  background: rgba(255, 255, 255, 0.142);
+  margin: 2px auto;
+  color: var(--text);
+}
+

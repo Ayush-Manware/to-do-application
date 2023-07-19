@@ -1,4 +1,5 @@
-var popup2 = document.getElementById('$secondPopup');
+var popup2 = document.getElementById("$secondPopup");
+var blur = document.getElementById("$blurBackground");
 
 // add Item Button
 function addItemButton() {
@@ -25,9 +26,9 @@ function newTaskAdd() {
 
   var cardHeading = document.getElementById("$input").value;
 
-  if(cardHeading === "" || cardHeading === " "){
-    alert('Please Enter Task');
-    cardBody.classList.add('hide')
+  if (cardHeading === "" || cardHeading === " ") {
+    alert("Please Enter Task");
+    cardBody.classList.add("hide");
   }
 
   var cardTitle = document.createElement("h2");
@@ -35,7 +36,7 @@ function newTaskAdd() {
   cardTitle.innerHTML = cardHeading;
   cardBody.appendChild(cardTitle);
 
-  var innerDiv = document.createElement("ul");
+  var innerDiv = document.createElement("div");
   innerDiv.setAttribute("class", "cardInnerDiv");
   cardBody.appendChild(innerDiv);
 
@@ -49,9 +50,9 @@ function newTaskAdd() {
   cardDeleteButton.innerText = "Delete Task";
   cardButtonDiv.appendChild(cardDeleteButton);
 
-  cardDeleteButton.addEventListener("click",()=>{
-    cardDeleteButton.parentNode.parentNode.setAttribute('class',"hide")
-  })
+  cardDeleteButton.addEventListener("click", () => {
+    cardDeleteButton.parentNode.parentNode.setAttribute("class", "hide");
+  });
 
   var cardAddButton = document.createElement("div");
   cardAddButton.setAttribute("class", "cardAddButton");
@@ -59,30 +60,38 @@ function newTaskAdd() {
   cardAddButton.innerText = "Add Item";
   cardButtonDiv.appendChild(cardAddButton);
 
-  cardAddButton.addEventListener('click',()=>{
-    popup2.classList.add("show")
-    popup2.classList.remove("hide")
-    cardContainer.classList.add('hide')
-    cardContainer.classList.remove('show')
-    blur.style.zIndex = "5"
+  cardAddButton.addEventListener("click", () => {
+    popup2.classList.add("show");
+    popup2.classList.remove("hide");
+    cardContainer.classList.remove("show");
+    cardContainer.classList.add("hide");
+    // blur.style.zIndex = 10;
 
-    // var input2 = document.getElementById('popup2Input').value ;
+    var abc = document.getElementById("$popup2AddButton");
+      abc.addEventListener("click", function abc() {
+      var addTaskListItem = document.createElement("li");
+      addTaskListItem.setAttribute("class", "addTaskListItem");
+      var input2 = document.getElementById("$popup2Input");
+      addTaskListItem.innerHTML = input2.value;
+      innerDiv.appendChild(addTaskListItem);
 
-  
-  })
+      popup2.classList.add("hide");
+      popup2.classList.remove("show");  
+    });
+    // abc();
+  });
 }
 
-function popup2del(){
+// function abc() {
+//   var addTaskListItem = document.createElement("li");
+//   addTaskListItem.setAttribute("class", "addTaskListItem");
+//   var input2 = document.getElementById('$popup2Input')
+//   addTaskListItem.innerHTML = input2.value;
+//   innerDiv.appendChild(addTaskListItem);
+// }
+function popup2del() {}
 
-}
-
-function popup2add(){
-
-}
-
-
-
-
+function popup2add() {}
 
 function newTaskClose() {
   var blur = document.getElementById("$blurBackground");
