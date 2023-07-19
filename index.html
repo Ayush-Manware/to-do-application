@@ -6,26 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
+    <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
   </head>
   <body>
+    
+    
     <div class="blurBackground hide" id="$blurBackground"> </div>
 
 
-    <div class="maincontainer">
-        <h2 class="logo">Task List</h2>
-        <h4 class="addItem" id="$addItem" onclick="addItem()">+ Add Item</h4>
 
+
+    <div class="maincontainer">
+        <h2 class="logo">Task <span class="List">List</span></h2>
+         <h4 class="addItem" id="$addItem" onclick="addItemButton()">+ Add Item</h4> <!--'addItem()' -->
+
+        <!-- popup1 -->
       <div id="popup" class="popupDiv hide">
         <h4 class="popupHeading">Add New Task</h4>
-        <input type="text" id="$input" class="input" value="" placeholder="Enter New Task"/>
-        <br/> <br>
-        <button class="add" id="$add"  onclick="add()">Add</button>
-        <button class="close" id="$close" onclick="closeButton()">Close</button>
-     
+        <div>
+          <img src="./assets/pngwing.com (1).png" alt="Loading!!" class="cardImage">
+        </div>
+        <input type="text" id="$input" class="input" value="" placeholder="Enter New Task" autocomplete="off"/>
+        <br/>
+        <div class="add" id="$add"  onclick="newTaskAdd()">Add</div> <!--add()-->
+        <div class="close" id="$close" onclick="newTaskClose()">Close</div>  <!-- closeButton() -->
       </div>
 
+      <!-- popup2 -->
+      <div class="secondPopup hide" id="$secondPopup">
+        <h2 class="popup2Title">Add List Item</h2>
+        <img src="./assets/pngwing.com (4).png" alt="" class="secondPopupImg">
+        <input type="text" class='popup2Input' id="$popup2Input" value="" placeholder="Enter List Item" autocomplete="off">
+        <div class="popup2ButtonDiv">
+          <div class="popup2DeleteButton" id="popup2DeleteButton" onclick="popup2del()">Delete Item</div>
+          <div class="popup2AddButton" id="popup2AddButton" onclick="popup2add()">Add Item</div>
+        </div>
+      </div>
+
+
+      <!-- Card Container -->
       <div class="cardContainer" id="$cardContainer"></div>
     </div>
-    <script src="./script.js"></script>
+
+
+
+    <script src="./script2.js"></script>
   </body>
 </html>
