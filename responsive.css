@@ -1,0 +1,23 @@
+/* @media screen and (max-width:870px){
+
+    .cardContainer{
+        /* flex-direction: column; */
+    /* } */
+
+    /* .cardBody{ */
+        /* width: 90%; */
+
+      /* } */
+/* } */ 
+
+@media screen and (max-width:1100px){
+    .cardBody{
+        width: 45%;
+      }
+}
+
+@media screen and (max-width:700px){
+    .cardBody{
+        width: 100%;
+      }
+}
