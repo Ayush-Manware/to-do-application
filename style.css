@@ -157,12 +157,10 @@ html {
   gap: 2vw;
   position: relative;
   margin: auto;
-  /* border: 1px solid white; */
-  /* padding: 0vw 5%; */
 }
 
 .cardBody{
-  min-width: 300px;
+  min-width: 45%;
   min-height: 40vw;
   text-align: center;
   box-shadow: 0px 10px 20px rgb(0, 0, 0);
@@ -187,7 +185,8 @@ html {
   min-height: 30vw;
   backdrop-filter: blur(2px);
   background-color: rgba(255, 255, 255, 0.058);
-  /* background-image: url('./assets/pngwing.com\ \(4\).png'); */
+  background-image: url('./assets/pngwing.com\ \(4\).png');
+  background-blend-mode: screen;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -199,7 +198,7 @@ html {
   justify-content: space-evenly;
   align-items: center;
   margin: 10px auto;
-  /* border: 1px solid white; */
+  font-size: 2vw;
 }
 
 .cardDeleteButton {
@@ -312,10 +311,8 @@ html {
 }
 
 .addTaskListItem{
-  /* border: 1px solid red; */
   font-size: 3vw;
   padding: 0.5vw;
-  /* list-style-type: none; */
   backdrop-filter: blur(1px);
   background: rgba(255, 255, 255, 0.142);
   margin: 2px auto;
