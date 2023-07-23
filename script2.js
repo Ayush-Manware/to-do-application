@@ -66,9 +66,10 @@ function newTaskAdd() {
     cardContainer.classList.remove("show");
     cardContainer.classList.add("hide");
     // blur.style.zIndex = 10;
-
+  })
     var abc = document.getElementById("$popup2AddButton");
       abc.addEventListener("click", function abc() {
+        // console.log('itemadd')
       var addTaskListItem = document.createElement("li");
       addTaskListItem.setAttribute("class", "addTaskListItem");
       var input2 = document.getElementById("$popup2Input");
@@ -79,7 +80,7 @@ function newTaskAdd() {
       popup2.classList.remove("show");  
     });
     // abc();
-  });
+
 }
 
 // function abc() {
