@@ -105,7 +105,10 @@ function newTaskAdd() {
     popup2DeleteButton.innerText = "Delete Item";
     popup2ButtonDiv.appendChild(popup2DeleteButton)
 
-    // popup2DeleteButton.addEventListener
+    popup2DeleteButton.addEventListener('click', ()=>{
+      popup2Div.remove();
+      popup2Blur.remove();
+    })
 
     // popup2AddButton
     var popup2AddButton = document.createElement('div')
@@ -116,29 +119,28 @@ function newTaskAdd() {
     popup2AddButton.addEventListener('click', function () {
       var addTaskListItem = document.createElement("div");
       addTaskListItem.setAttribute("class", "addTaskListItem");
-      
       var input2 = document.getElementById("$popup2Input");   
-      addTaskListItem.innerHTML = input2.value;
-      innerDiv.appendChild(addTaskListItem);
 
+      var TaskListp = document.createElement('p')
+      TaskListp.setAttribute('class',"TaskListp")
+      TaskListp.innerHTML = input2.value;
+      addTaskListItem.appendChild(TaskListp)
+
+      var TaskListpCancel = document.createElement('p')
+      TaskListpCancel.setAttribute('class',"TaskListpCancel")
+      TaskListpCancel.innerHTML = '<i class="fa-solid fa-xmark"></i>'
+      addTaskListItem.appendChild(TaskListpCancel);
+
+      TaskListpCancel.addEventListener('click',function(){
+        addTaskListItem.remove();
+      })
+      // addTaskListItem.innerHTML = input2.value;
+      innerDiv.appendChild(addTaskListItem);
       popup2Div.remove();
       popup2Blur.remove();
     })
 
   })
-    // var abc = document.getElementById("$popup2AddButton");
-    //   abc.addEventListener("click", function abc() {
-    //     // console.log('itemadd')
-    //   var addTaskListItem = document.createElement("li");
-    //   addTaskListItem.setAttribute("class", "addTaskListItem");
-    //   var input2 = document.getElementById("$popup2Input");
-    //   addTaskListItem.innerHTML = input2.value;
-    //   innerDiv.appendChild(addTaskListItem);
-
-    //   popup2.classList.add("hide");
-    //   popup2.classList.remove("show");  
-    // });
-    // // abc();
 
 }
 

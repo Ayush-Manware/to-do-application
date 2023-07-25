@@ -253,9 +253,11 @@ html {
   left: 30%;
   top: 30%;
   box-shadow: 0px 10px 20px rgb(0, 0, 0);
-  /* border:1px solid white; */
+  border:1px solid white;
   /* background-image: url('./assets/pngwing.com\ \(2\).png');
-  background-size: cover; */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; */
 }
 
 
@@ -263,7 +265,6 @@ html {
   text-align: center;
   color: orange;
   font-size: 3.4vw;
-  /* margin: 4vh; */
 }
 
 .secondPopupImg{
@@ -325,11 +326,34 @@ html {
 }
 
 .addTaskListItem{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   font-size: 3vw;
   padding: 0.5vw;
-  backdrop-filter: blur(1px);
-  background: rgba(255, 255, 255, 0.142);
-  margin: 2px auto;
+  /* background: rgba(241, 150, 47, 0.073); */
+  border: 1px solid white; 
+  border-right: none;
+  border-left: none;
+  padding: 0.5vw 0px; 
+  margin: 1vh auto;
   color: var(--text);
 }
 
+.TaskListp{
+  /* border: 1px solid red;  */
+  width: 88%;
+  padding: 0.5vw 0px; 
+  margin: 0px auto; 
+}
+
+.TaskListpCancel{
+  /* border: 1px solid red;  */
+  padding: 0.5vw 0px; 
+  width: 12%; 
+  color: rgba(255, 0, 0, 0.499);
+  /* backdrop-filter: blur(1px); */
+  /* background: rgba(252, 11, 11, 0.188); */
+  margin: 0px auto; 
+
+}
