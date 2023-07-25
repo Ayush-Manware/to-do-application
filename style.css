@@ -197,7 +197,7 @@ html {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin: 10px auto;
+  margin: 1vw auto;
   font-size: 2vw;
 }
 
@@ -207,9 +207,9 @@ html {
   border: 1px solid var(--darkRed);
   background-color: var(--darkRed);
   color:var(--text);
-  padding: 10px 0px;
+  padding: 1vw 0vw;
   transition: all 0.1s linear;
-  border-radius: 5px;
+  border-radius: 0.5vw;
 }
 
 .cardDeleteButton:hover{
@@ -219,12 +219,12 @@ html {
 
 .cardAddButton {
   width: 45%;
-  border-radius: 5px;
+  border-radius: 0.5vw;
   outline: none;
   border: 1px solid var(--orange);
   background-color: var(--orange);
   color:var(--text);
-  padding: 10px 0px;
+  padding: 1vw 0vw;
   transition: all 0.1s linear;
 }
 
@@ -234,27 +234,40 @@ html {
   color: var(--orange);
 }
 
-.secondPopup{
+.popup2blur{
+  backdrop-filter: blur(10px);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0vw;
+  left: 0vw;
+  background-color: rgba(255, 255, 255, 0.089);
+}
+
+.popup2Div{
   backdrop-filter: blur(10px);
   text-align: center;
-  width: 37%;
+  width: 45%;
   padding: 5px; 
   position: fixed;
-  left: 31%;
+  left: 30%;
   top: 30%;
   box-shadow: 0px 10px 20px rgb(0, 0, 0);
-  z-index: 2;
+  /* border:1px solid white; */
+  /* background-image: url('./assets/pngwing.com\ \(2\).png');
+  background-size: cover; */
 }
+
 
 .popup2Title {
   text-align: center;
   color: orange;
   font-size: 3.4vw;
-  margin: 4vh;
+  /* margin: 4vh; */
 }
 
 .secondPopupImg{
-  width: 35%;
+  width: 40%;
 }
 
 .popup2Input {
@@ -263,6 +276,7 @@ html {
   font-size: 2vw;
   outline:none;
   text-align: center;
+  border-radius: 5px;
 }
 
 .popup2Input:focus{

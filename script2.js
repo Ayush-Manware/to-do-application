@@ -61,38 +61,87 @@ function newTaskAdd() {
   cardButtonDiv.appendChild(cardAddButton);
 
   cardAddButton.addEventListener("click", () => {
-    popup2.classList.add("show");
-    popup2.classList.remove("hide");
-    cardContainer.classList.remove("show");
-    cardContainer.classList.add("hide");
-    // blur.style.zIndex = 10;
-  })
-    var abc = document.getElementById("$popup2AddButton");
-      abc.addEventListener("click", function abc() {
-        // console.log('itemadd')
-      var addTaskListItem = document.createElement("li");
+    // popup2Blur
+    var popup2Blur = document.createElement('div')
+    popup2Blur.setAttribute("class","popup2blur")
+    var mainContainer = document.getElementById('$maincontainer');
+    mainContainer.appendChild(popup2Blur)
+
+    // popup2Container
+    var popup2Div = document.createElement('div')
+    popup2Div.setAttribute('class',"popup2Div")
+    popup2Blur.appendChild(popup2Div)
+
+    // popup2Title
+    var popup2Title = document.createElement('h2')
+    popup2Title.setAttribute('class',"popup2Title")
+    popup2Title.innerText = "Add New Task";
+    popup2Div.appendChild(popup2Title)
+
+
+    // secondPopupImg
+    // var secondPopupImg = document.createElement('img')
+    // secondPopupImg.setAttribute('class',"secondPopupImg")
+    // secondPopupImg.src = "./assets/pngwing.com.png";
+    // popup2Div.appendChild(secondPopupImg)
+
+
+    // popup2Input 
+    var popup2Input  = document.createElement('input')
+    popup2Input.setAttribute('class',"popup2Input")
+    popup2Input.setAttribute('id','$popup2Input')
+    popup2Div.appendChild(popup2Input)
+
+
+    // popup2ButtonDiv
+    var popup2ButtonDiv = document.createElement('div')
+    popup2ButtonDiv.setAttribute('class','popup2ButtonDiv')
+    popup2Div.appendChild(popup2ButtonDiv)
+
+
+        // popup2AddButton
+    var popup2DeleteButton = document.createElement('div')
+    popup2DeleteButton.setAttribute('class','popup2DeleteButton')
+    popup2DeleteButton.innerText = "Delete Item";
+    popup2ButtonDiv.appendChild(popup2DeleteButton)
+
+    // popup2DeleteButton.addEventListener
+
+    // popup2AddButton
+    var popup2AddButton = document.createElement('div')
+    popup2AddButton.setAttribute('class',"popup2AddButton")
+    popup2AddButton.innerText = "Add Item"
+    popup2ButtonDiv.appendChild(popup2AddButton)
+
+    popup2AddButton.addEventListener('click', function () {
+      var addTaskListItem = document.createElement("div");
       addTaskListItem.setAttribute("class", "addTaskListItem");
-      var input2 = document.getElementById("$popup2Input");
+      
+      var input2 = document.getElementById("$popup2Input");   
       addTaskListItem.innerHTML = input2.value;
       innerDiv.appendChild(addTaskListItem);
 
-      popup2.classList.add("hide");
-      popup2.classList.remove("show");  
-    });
-    // abc();
+      popup2Div.remove();
+      popup2Blur.remove();
+    })
+
+  })
+    // var abc = document.getElementById("$popup2AddButton");
+    //   abc.addEventListener("click", function abc() {
+    //     // console.log('itemadd')
+    //   var addTaskListItem = document.createElement("li");
+    //   addTaskListItem.setAttribute("class", "addTaskListItem");
+    //   var input2 = document.getElementById("$popup2Input");
+    //   addTaskListItem.innerHTML = input2.value;
+    //   innerDiv.appendChild(addTaskListItem);
+
+    //   popup2.classList.add("hide");
+    //   popup2.classList.remove("show");  
+    // });
+    // // abc();
 
 }
 
-// function abc() {
-//   var addTaskListItem = document.createElement("li");
-//   addTaskListItem.setAttribute("class", "addTaskListItem");
-//   var input2 = document.getElementById('$popup2Input')
-//   addTaskListItem.innerHTML = input2.value;
-//   innerDiv.appendChild(addTaskListItem);
-// }
-function popup2del() {}
-
-function popup2add() {}
 
 function newTaskClose() {
   var blur = document.getElementById("$blurBackground");
