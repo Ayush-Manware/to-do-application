@@ -134,7 +134,6 @@ function newTaskAdd() {
       TaskListpCancel.addEventListener('click',function(){
         addTaskListItem.remove();
       })
-      // addTaskListItem.innerHTML = input2.value;
       innerDiv.appendChild(addTaskListItem);
       popup2Div.remove();
       popup2Blur.remove();
