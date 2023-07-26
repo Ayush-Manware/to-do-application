@@ -21,3 +21,15 @@
         width: 100%;
       }
 }
+
+@media screen and (min-width: 912px){
+    /* body{
+        background-color: bisque;
+    } */
+    .popupDiv{
+        width: 50%;
+        left: 26%;
+    }
+
+   
+}

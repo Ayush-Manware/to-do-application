@@ -1,5 +1,7 @@
 var popup2 = document.getElementById("$secondPopup");
 var blur = document.getElementById("$blurBackground");
+var logo = document.getElementsByClassName('logo')[0];
+
 
 // add Item Button
 function addItemButton() {
@@ -35,6 +37,11 @@ function newTaskAdd() {
   cardTitle.setAttribute("class", "cardTitle");
   cardTitle.innerHTML = cardHeading;
   cardBody.appendChild(cardTitle);
+  cardTitle.addEventListener('click',()=>{
+    var showCard = document.getElementById('$showCard');
+    showCard.classList.remove('hide')
+  })
+
 
   var innerDiv = document.createElement("div");
   innerDiv.setAttribute("class", "cardInnerDiv");
@@ -79,11 +86,11 @@ function newTaskAdd() {
     popup2Div.appendChild(popup2Title)
 
 
-    // secondPopupImg
-    // var secondPopupImg = document.createElement('img')
-    // secondPopupImg.setAttribute('class',"secondPopupImg")
-    // secondPopupImg.src = "./assets/pngwing.com.png";
-    // popup2Div.appendChild(secondPopupImg)
+    secondPopupImg
+    var secondPopupImg = document.createElement('img')
+    secondPopupImg.setAttribute('class',"secondPopupImg")
+    // secondPopupImg.src = "./assets/avengers-40995.png";
+    popup2Div.appendChild(secondPopupImg)
 
 
     // popup2Input 

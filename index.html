@@ -5,33 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
-    <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
-    <script src="https://kit.fontawesome.com/078812abb6.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./responsive.css">
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      type="text/javascript"
+      async
+      src="https://tenor.com/embed.js"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/078812abb6.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./responsive.css" />
   </head>
   <body>
-    
-    
-    <div class="blurBackground hide" id="$blurBackground"> </div>
-
-
-
+    <div class="blurBackground hide" id="$blurBackground"></div>
+    <div class="showCard hide" id="$showCard">
+      <div class="showcardInnerDiv" id="$showcardInnerDiv">
+        <div class="back"> <-Back</div>
+        <div class="showCardAdd"> + Add</div>
+      </div>
+    </div>
 
     <div class="maincontainer" id="$maincontainer">
-        <h2 class="logo">Task <span class="List">List</span></h2>
-         <h4 class="addItem" id="$addItem" onclick="addItemButton()">+ Add Item</h4> <!--'addItem()' -->
+      <h2 class="logo">Task <span class="List">List</span></h2>
+      <h4 class="addItem" id="$addItem" onclick="addItemButton()">+ Add Item</h4>
 
-        <!-- popup1 -->
+      <img src="./assets/avengers-40995.png" class="centerImg" alt="">
+
+      <!-- popup1 -->
       <div id="popup" class="popupDiv hide">
         <h4 class="popupHeading">Add New Task</h4>
         <div>
-          <img src="./assets/pngwing.com (1).png" alt="Loading!!" class="cardImage">
+          <img src="./assets/pngwing.com (1).png" alt="Loading!!" class="cardImage"/>
         </div>
         <input type="text" id="$input" class="input" value="" placeholder="Enter New Task" autocomplete="off"/>
-        <br/>
-        <div class="add" id="$add"  onclick="newTaskAdd()">Add</div> <!--add()-->
-        <div class="close" id="$close" onclick="newTaskClose()">Close</div>  <!-- closeButton() -->
+        <br />
+        <div class="add" id="$add" onclick="newTaskAdd()">Add</div>
+        <!--add()-->
+        <div class="close" id="$close" onclick="newTaskClose()">Close</div>
+        <!-- closeButton() -->
       </div>
 
       <!-- popup2 -->
@@ -45,15 +57,11 @@
         </div>
       </div> -->
 
-
       <!-- Card Container -->
       <div class="cardContainer" id="$cardContainer"></div>
     </div>
-    <!-- <div class="me">
-    <img src="./assets/26160971_4l50_68qb_211202.jpg" alt="Error" width="100%" height="100%">
-      
-      <h2>Ayush Manware</h2>
-    </div> -->
+
+   
 
     <script src="./script2.js"></script>
   </body>
