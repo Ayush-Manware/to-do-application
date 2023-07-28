@@ -115,7 +115,7 @@ html {
   width: 40%;
   position: fixed;
   left: 31%;
-  top: 29%;
+  top: 20%;
   z-index: 4;
   font-size: 2vw;
 }
@@ -188,6 +188,18 @@ html {
 }
 
 .cardBody{
+  min-width: 45%;
+  min-height: 40vw;
+  text-align: center;
+  box-shadow: 0px 10px 20px rgb(0, 0, 0);
+  border-radius: 10px;
+  background-color: var(--background);
+}
+
+.cardBody2{
+  position: fixed;
+  top: 25vh;
+  left: 28vw;
   min-width: 45%;
   min-height: 40vw;
   text-align: center;
@@ -271,6 +283,7 @@ html {
   top: 0vw;
   left: 0vw;
   background-color: rgba(255, 255, 255, 0.089);
+  z-index: 8;
 }
 
 .popup2Div{
@@ -315,9 +328,10 @@ html {
 
 .popup2ButtonDiv {
   display: flex;
-  margin: 10px auto;
+  margin: 1vh auto;
   justify-content: space-evenly;
   align-items: center;
+  font-size: 2vw;
 }
 
 .popup2AddButton {
@@ -378,7 +392,6 @@ html {
 }
 
 .TaskListpCancel{
-  /* border: 1px solid red;  */
   padding: 0.5vw 0px; 
   width: 12%; 
   color: rgba(255, 0, 0, 0.499);
@@ -396,4 +409,16 @@ html {
   position: fixed;
   top: 0px;
   left: 0px;
+ /* border: 1px solid white; */
+}
+
+.showcardInnerDiv{
+  position: absolute;
+  top: 15vh; 
+ color: white;
+ display: flex;
+ width: 100vw;
+ justify-content: space-evenly;
+ align-items: center;
+ font-size: 3vw;
 }

@@ -37,9 +37,14 @@ function newTaskAdd() {
   cardTitle.setAttribute("class", "cardTitle");
   cardTitle.innerHTML = cardHeading;
   cardBody.appendChild(cardTitle);
+
+
   cardTitle.addEventListener('click',()=>{
     var showCard = document.getElementById('$showCard');
     showCard.classList.remove('hide')
+    cardBody.classList.add('cardBody2')
+    cardBody.classList.remove('cardBody')
+    showCard.appendChild(cardBody)
   })
 
 
@@ -59,6 +64,8 @@ function newTaskAdd() {
 
   cardDeleteButton.addEventListener("click", () => {
     cardDeleteButton.parentNode.parentNode.setAttribute("class", "hide");
+    var showCard = document.getElementById('$showCard');
+    showCard.classList.add('hide');
   });
 
   var cardAddButton = document.createElement("div");
@@ -86,7 +93,7 @@ function newTaskAdd() {
     popup2Div.appendChild(popup2Title)
 
 
-    secondPopupImg
+    // secondPopupImg
     var secondPopupImg = document.createElement('img')
     secondPopupImg.setAttribute('class',"secondPopupImg")
     // secondPopupImg.src = "./assets/avengers-40995.png";
@@ -158,4 +165,8 @@ function newTaskClose() {
   var popup1 = document.getElementById("popup");
   popup1.classList.remove("show");
   popup1.classList.add("hide");
+}
+
+function showCardAdd(){
+  
 }
