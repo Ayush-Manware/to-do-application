@@ -3,15 +3,17 @@ var blur = document.getElementById("$blurBackground");
 var logo = document.getElementsByClassName("logo")[0];
 var backButton = document.getElementById("$back");
 var showCard = document.getElementById("$showCard");
-var cardContainer = document.getElementById("$cardContainer");
-var z = document.getElementById("$cardBody");
+var cardContainer = document.getElementById("$cardContainer"); 
+var showCardAdd = document.getElementById('$showCardAdd');
+var popup1 = document.getElementById("popup");
+var blur = document.getElementById("$blurBackground");
+
 
 // add Item Button
 function addItemButton() {
-  var blur = document.getElementById("$blurBackground");
   blur.classList.remove("hide");
 
-  var popup1 = document.getElementById("popup");
+
   popup1.classList.remove("hide");
   popup1.classList.add("show");
 }
@@ -23,7 +25,6 @@ function newTaskAdd() {
   var popup1 = document.getElementById("popup");
   popup1.classList.remove("show");
   popup1.classList.add("hide");
-  // ----------------------------------------------------------------------------------------
 
   var cardBody = document.createElement("div");
   cardBody.setAttribute("class", "cardBody");
@@ -48,12 +49,6 @@ function newTaskAdd() {
     cardBody.classList.remove("cardBody");
     showCard.appendChild(cardBody);
   });
-
-  // var backButton = document.getElementById('$backButton');
-  // var fullScreen = document.getElementById("$showCard")
-  // var back = function backButton(){
-  //   fullScreen.parentNodet.classList.add('hide')
-  // }
 
   var innerDiv = document.createElement("div");
   innerDiv.setAttribute("class", "cardInnerDiv");
@@ -156,17 +151,33 @@ function newTaskAdd() {
       popup2Blur.remove();
     });
   });
-  
+
   backButton.addEventListener("click", () => {
-    a();
+    showCardBack();
   });
 
-  function a() {
+  function showCardBack() {
     showCard.classList.add("hide");
     cardBody.classList.add("cardBody");
     cardBody.classList.remove("cardBody2");
     cardContainer.appendChild(cardBody);
   }
+
+  showCardAdd.addEventListener('click',()=>{
+    showCardAddMain()
+  })
+
+  function showCardAddMain(){
+    blur.classList.remove("hide");
+    popup1.classList.remove("hide");
+    popup1.classList.add("show");
+
+    showCard.classList.add("hide");
+    cardBody.classList.add("cardBody");
+    cardBody.classList.remove("cardBody2");
+    cardContainer.appendChild(cardBody);
+  }
+
 }
 
 function newTaskClose() {

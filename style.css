@@ -8,14 +8,6 @@
   --lightRed: rgb(245, 32, 32);
 }
 
-.show{
-  display: block;
-}
-
-.hide{
-  display: none;
-}
-
 @keyframes slope{
   0%{
       opacity: 0;
@@ -34,9 +26,23 @@
   }
 }
 
+.show{
+  display: block;
+}
+
+.hide{
+  display: none;
+}
+
+.back{
+  font-size: 2vw;
+}
+
+.showCardAdd{
+  font-size: 2vw;
+}
+
 body {
-  /* background-image: url('./assets/27284142_7kht_vi4n_211202.jpg'); */
-  background-repeat: no-repeat;
   background-color: var(--background);
   background-size: cover;
 }
@@ -188,7 +194,7 @@ html {
 }
 
 .cardBody{
-  min-width: 45%;
+  min-width: 31%;
   min-height: 40vw;
   text-align: center;
   box-shadow: 0px 10px 20px rgb(0, 0, 0);
@@ -210,6 +216,7 @@ html {
 
 .cardBody:hover{
   scale: 1.05;
+  transform: translate(0px,-20px);
   box-shadow: 0px 15px 30px rgb(0, 0, 0);
 }
 
@@ -372,20 +379,18 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 3vw;
+  font-size: 2vw;
   padding: 0.5vw;
-  background: rgba(255, 255, 255, 0.073);
-  /* border: 1px solid white;  */
   border-right: none;
   border-left: none;
   padding: 0.5vw 0px; 
-  margin: 1vh auto;
   color: var(--text);
 }
 
 .TaskListp{
   /* border: 1px solid red;  */
-  /* background: rgba(255, 121, 4, 0.641); */
+  background: rgba(255, 255, 255, 0.037);
+  backdrop-filter: blur(10px);
   width: 88%;
   padding: 0.5vw 0px; 
   margin: 0px auto; 
@@ -393,10 +398,11 @@ html {
 
 .TaskListpCancel{
   padding: 0.5vw 0px; 
+  background: rgba(255, 255, 255, 0.037);
+  backdrop-filter: blur(10px);
   width: 12%; 
   color: rgba(255, 0, 0, 0.499);
-  /* backdrop-filter: blur(1px); */
-  /* background: rgba(252, 11, 11, 0.188); */
+  /* font-size: 3vw; */
   margin: 0px auto; 
 }
 
@@ -421,4 +427,8 @@ html {
  justify-content: space-evenly;
  align-items: center;
  font-size: 3vw;
+}
+
+.backImg{
+  width: 50px;
 }

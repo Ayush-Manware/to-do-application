@@ -22,14 +22,14 @@
       }
 }
 
-@media screen and (min-width: 912px){
-    /* body{
-        background-color: bisque;
-    } */
+@media screen and (max-width: 912px){
+    /* .logo{
+        font-size: 5vh;
+    }
     .popupDiv{
         width: 50%;
         left: 26%;
-    }
+    } */
 
    
 }
