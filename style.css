@@ -63,6 +63,7 @@ html {
   left: 17vw;
   width: 70vw;
   mix-blend-mode: lighten;
+  z-index: -1;
 }
 
 .blurBackground {
@@ -123,7 +124,6 @@ html {
   left: 31%;
   top: 20%;
   z-index: 4;
-  font-size: 2vw;
 }
 
 .cardImage{
@@ -134,10 +134,9 @@ html {
 .input{
   width: 93%;
   text-align: center;
-  padding: 3% 0%;
+  padding: 1vh;
   margin-top: 10px;
   font-size: 2vw;
-
 }
 
 .input:focus{
@@ -152,6 +151,7 @@ html {
   padding: 0.5vw;
   color: white;
   transition: all 0.1s linear;
+  font-size: 2vw;
 }
 
 .add:hover{
@@ -179,7 +179,7 @@ html {
 .popupHeading {
   color: var(--text);
   font-size: 3vw;
-  margin: 1% auto;
+  margin: 1vh auto;
 }
 
 .cardContainer {
@@ -189,13 +189,13 @@ html {
   align-items: center;
   flex-wrap: wrap;
   gap: 2vw;
-  position: relative;
-  margin: auto;
+  margin-inline: auto;
+  /* border: 1px solid white; */
 }
 
 .cardBody{
   min-width: 31%;
-  min-height: 40vw;
+  min-height: 31vw;
   text-align: center;
   box-shadow: 0px 10px 20px rgb(0, 0, 0);
   border-radius: 10px;
@@ -207,7 +207,7 @@ html {
   top: 25vh;
   left: 28vw;
   min-width: 45%;
-  min-height: 40vw;
+  min-height: 31vw;
   text-align: center;
   box-shadow: 0px 10px 20px rgb(0, 0, 0);
   border-radius: 10px;
@@ -215,8 +215,7 @@ html {
 }
 
 .cardBody:hover{
-  scale: 1.05;
-  transform: translate(0px,-20px);
+  transform: translate(0px,-5px);
   box-shadow: 0px 15px 30px rgb(0, 0, 0);
 }
 
@@ -230,14 +229,9 @@ html {
 }
 
 .cardInnerDiv {
-  min-height: 30vw;
+  min-height: 23vw;
   backdrop-filter: blur(2px);
   background-color: rgba(255, 255, 255, 0.058);
-  background-image: url('./assets/pngwing.com\ \(4\).png');
-  background-blend-mode: screen;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
   margin:0px  auto;
 }
 
@@ -302,7 +296,6 @@ html {
   left: 30%;
   top: 30%;
   box-shadow: 0px 10px 20px rgb(22, 22, 22);
-  /* border:1px solid white; */
   /* background-image: url('./assets/pngwing.com\ \(2\).png');
   background-size: contain;
   background-repeat: no-repeat;
@@ -314,6 +307,7 @@ html {
   text-align: center;
   color: orange;
   font-size: 3.4vw;
+  border-bottom: 1px solid white;
 }
 
 .secondPopupImg{
@@ -358,7 +352,7 @@ html {
 .popup2DeleteButton {
   width: 45%;
   border: 1px solid var(--darkRed);
-  padding: 8px 0px;
+  padding: 0.8vh 0px;
   background: var(--darkRed);
   transition: all 0.1s linear;
   color: var(--text);
@@ -388,7 +382,6 @@ html {
 }
 
 .TaskListp{
-  /* border: 1px solid red;  */
   background: rgba(255, 255, 255, 0.037);
   backdrop-filter: blur(10px);
   width: 88%;
@@ -402,7 +395,6 @@ html {
   backdrop-filter: blur(10px);
   width: 12%; 
   color: rgba(255, 0, 0, 0.499);
-  /* font-size: 3vw; */
   margin: 0px auto; 
 }
 
@@ -415,7 +407,6 @@ html {
   position: fixed;
   top: 0px;
   left: 0px;
- /* border: 1px solid white; */
 }
 
 .showcardInnerDiv{
