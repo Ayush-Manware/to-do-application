@@ -4,7 +4,7 @@
   }
 }
 
-@media screen and (max-width: 700px) {
+ @media screen and (max-width: 912px) {
   .logo {
     font-size: 6vw;
   }
@@ -20,20 +20,21 @@
 
   .centerImg {
     width: 100vw;
-    left: 0px;
+    left: 1px;
     }
+
   .logo::first-letter {
     font-size: 7vw;
   }
 
   .popupDiv {
-    width: 60%;
-    top: 32%;
-    left: 19%;
+    width: 85%;
+    top: 26%;
+    left: 7%;
   }
 
   .popupHeading{
-    font-size: 5vw;
+    font-size: 7vw;
   }
 
   .input{
@@ -45,13 +46,13 @@
   }
 
   .add{
-    font-size: 3.5vw;
-    width: 57vw;
+    font-size: 4.5vw;
+    width: 95%;
   }
 
   .close{
-    font-size: 3.5vw;
-    width: 57vw;
+    font-size: 4.5vw;
+    width: 95%;
   }
 
   .cardContainer {
@@ -59,53 +60,80 @@
   }
 
   .cardTitle{
-    font-size: 4vw;
+    font-size: 6vw;
   }
 
   .cardBody {
-    width: 80%;
-  }
-
-  .cardAddButton {
-    font-size: 3.5vw;
+    width: 95%;
   }
 
   .cardDuttonDiv {
-    font-size: 3.5vw;
+    font-size: 5vw;
+    padding: 1vh 0vh;
   }
 
   .popup2Div{
-    width: 60%;
-    top: 32%;
-    left: 19%;
+    width: 90%;
+    top: 23%;
+    left: 5%;
   }
 
   .popup2Title {
-    font-size: 6vw;
+    font-size: 8vw;
     margin: 0px;
   }
 
+  .secondPopupImg{
+    width: 45vw;
+  }
+
   .popup2Input{
-    font-size: 3vw; 
+    font-size: 5vw; 
+    padding: 1vw 0vw;
   }
 
   .popup2ButtonDiv{
     font-size: 3.5vw;
     gap: 1vh;
+    flex-direction: column-reverse;
+  }
+
+  .popup2DeleteButton{
+    width: 90%;
+    font-size: 5vw;
+    padding: 1vw 0vw;
+  }
+
+  .popup2AddButton{
+    width: 90%;
+    font-size: 5vw;
+    padding: 1vw 0vw;
   }
 
   .addTaskListItem{
     font-size: 4vw;
   }
-}
 
-@media screen and (max-width: 450px) {
+  .showCardAdd{
+    font-size: 4vw;
+  }
+
+  .back{
+    font-size: 4vw;
+  }
+
+  .cardBody2{
+    width: 86vw;
+    left: 8vw;
+  }
+} 
+
+@media screen and (max-width: 540px) {
     .logo {
       font-size: 10vw;
     }
 
     .logo::first-letter{
-        /* color: var(--orange); */
         font-size: 10vw;
       }
       
@@ -115,8 +143,6 @@
     }
   
     .addItem {
-      /* font-size: 9vw;
-      width: 28vw; */
       position: fixed;
       bottom: 0px;
       left: 0%;
@@ -126,17 +152,19 @@
       background-color:  rgb(241, 150, 47);
       width: 94vw;
       color: white;
+      font-size: 6vw;
     }
   
     .centerImg {
       width: 100vw;
       left: 0px;
+      top: 35vh;
       }
   
     .popupDiv {
-      width: 60%;
+      width: 90%;
       top: 32%;
-      left: 19%;
+      left: 4%;
     }
   
     .popupHeading{
@@ -152,13 +180,13 @@
     }
   
     .add{
-      font-size: 3.5vw;
-      width: 57vw;
+      font-size: 5.5vw;
+      width: 87vw;
     }
   
     .close{
-      font-size: 3.5vw;
-      width: 57vw;
+      font-size: 5.5vw;
+      width: 87vw;
     }
   
     .cardContainer {

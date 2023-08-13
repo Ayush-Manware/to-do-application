@@ -97,7 +97,7 @@ function newTaskAdd() {
     // secondPopupImg
     var secondPopupImg = document.createElement("img");
     secondPopupImg.setAttribute("class", "secondPopupImg");
-    // secondPopupImg.src = "./assets/avengers-40995.png";
+    secondPopupImg.src = "./assets/pngwing.com (1).png";
     popup2Div.appendChild(secondPopupImg);
 
     // popup2Input
@@ -114,7 +114,7 @@ function newTaskAdd() {
     // popup2AddButton
     var popup2DeleteButton = document.createElement("div");
     popup2DeleteButton.setAttribute("class", "popup2DeleteButton");
-    popup2DeleteButton.innerText = "Delete Item";
+    popup2DeleteButton.innerText = "Close";
     popup2ButtonDiv.appendChild(popup2DeleteButton);
 
     popup2DeleteButton.addEventListener("click", () => {
@@ -140,7 +140,7 @@ function newTaskAdd() {
 
       var TaskListpCancel = document.createElement("p");
       TaskListpCancel.setAttribute("class", "TaskListpCancel");
-      TaskListpCancel.innerHTML = '<i class="fa-solid fa-xmark"></i>';
+      TaskListpCancel.innerHTML = "X";//'<i class="fa-solid fa-xmark"></i>';
       addTaskListItem.appendChild(TaskListpCancel);
 
       TaskListpCancel.addEventListener("click", function () {
